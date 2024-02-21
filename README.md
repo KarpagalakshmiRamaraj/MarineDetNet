@@ -10,6 +10,13 @@ performs best for enhanced images.
 Here, We have introduced the **MarineDetNet** which performs image enhancement and object detection sequentially, ie., after performing image enhancement, the enhanced images 
 are given as an input for a object detection model for training. 
 
+**Datasets**
+
+The dataset we have used for this model is **DUO** which is a part of URPC2017 dataset. The DUO dataset is a collection of diverse underwater images specifically designed for underwater object detection for robot picking. The DUO dataset consists of 4 categories. Holothurian, Sea Urchin, Scallop and Starfish. Image resolution is **640x640**
+Total No of images : **3235**
+Training images: **2600**
+Testing images: **635**
+
 **Image enhancement**
 
 Underwater image enhancement is aims to improve the visibility and quality of images captured underwater. The image enhancement subnetwork is preceded by three convolution layers with kernels of  3x3, 5x5, 3x3. The channels of convolution layers is 32. The image enhancement subnet has series of convolution layers. It contains three 3x3 convolution layers followed by a batch normalization and ReLu activation function. The fourth convolution layer with kernel size 3x3 is followed by  batch normalization and sigmoid activation function. The sigmoid function squashes the input to an output between 0 and 1. The output channel size of the image enhancement subnet is 3. From the enhanced feature map, the enhanced image can be obtained. 
