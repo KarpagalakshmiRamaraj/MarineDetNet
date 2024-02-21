@@ -13,9 +13,12 @@ are given as an input for a object detection model for training.
 **Datasets**
 
 The dataset we have used for this model is **DUO** which is a part of URPC2017 dataset. The DUO dataset is a collection of diverse underwater images specifically designed for underwater object detection for robot picking. The DUO dataset consists of 4 categories. Holothurian, Sea Urchin, Scallop and Starfish. Image resolution is **640x640**
-Total No of images : **3235**
-Training images: **2600**
-Testing images: **635**
+
+•	Total No of images : **3235**
+
+•	Training images: **2600**
+
+•	Testing images: **635**
 
 **Image enhancement**
 
